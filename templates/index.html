@@ -1,11 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask</title>
+    <title>Flask e Pesquisa</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, sans-serif;
+            color: #1a1a1a;
+            background: #fff;
+            line-height: 1.7;
+        }
+
+        .page {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 2.5rem 2rem;
+        }
+
+        .hero {
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .page-label {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-title {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 500;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e5e5e5;
+            margin-bottom: 1.25rem;
+        }
+
+        .section-subtitle {
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #888;
+            margin-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .section-body {
+            font-size: 15px;
+            line-height: 1.75;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Bem vindo ao Flask</h1>
+    <div class="page">
+
+        <div class="hero">
+            <p class="page-label">Bem-vindo ao Flask</p>
+            <h1 class="hero-title">Atividade – Pesquisa sobre hospedagem com HTML e Python</h1>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">O que é Python?</h2>
+            <p class="section-subtitle">Para que serve?</p>
+            <p class="section-body">
+                <!-- https://www.alura.com.br/artigos/python?utm_term=&utm_campaign=&utm_source=google&utm_medium=cpc&campaign_id=23805973578__&utm_id=23805973578__&hsa_acc=7964138385&hsa_cam=&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=google&hsa_ver=3&gad_source=1&gad_campaignid=23815806613&gbraid=0AAAAADpqZICtxCUnscVDGwqa1fchClLwP&gclid=CjwKCAjwqubPBhBOEiwAzgZX2oEVox2LOh_Idl1GQRWuBSLJmyzky1W_ctQG2vdNwMkj9LQxriukURoC-w0QAvD_BwE -->
+                Python é uma linguagem de programação de uso geral. Isso significa que é uma linguagem que
+                funciona para criar
+                uma grande variedade de aplicações diferentes.
+
+                Ou seja, o Python é uma linguagem geral, que não é especializada em nenhum problema específico.
+
+                Essa versatilidade e a facilidade de uso para pessoas iniciantes, fez com que se tornasse uma das
+                linguagens
+                mais comuns atualmente.
+            </p>
+            <p class="section-subtitle">Vantagens de usar Python na vida profissional</p>
+            <p class="section-body">
+                <!-- https://clarify.com.br/blog/python-para-crescer-profissionalmente/ -->
+                Python se destaca por sua sintaxe simples e intuitiva, o que facilita o aprendizado e a entrada no
+                mercado de
+                tecnologia. Sua versatilidade permite aplicação em diversas áreas — análise de dados, desenvolvimento
+                web,
+                inteligência artificial, automação e machine learning — evitando que o profissional fique restrito a um
+                único
+                caminho de carreira.
+                No mercado de trabalho, a linguagem é amplamente valorizada: empresas como Google, Netflix e Spotify a
+                utilizam,
+                e as vagas que exigem Python costumam oferecer salários mais atrativos e alta demanda. Isso gera uma
+                vantagem
+                competitiva significativa para quem a domina.
+                Outro ponto forte é o ecossistema robusto da linguagem — uma comunidade ativa, vasta disponibilidade de
+                materiais e bibliotecas especializadas como Pandas, Matplotlib, TensorFlow e Scikit-Learn, que agilizam
+                o
+                desenvolvimento de projetos reais.
+                Por fim, o domínio de Python abre portas para cargos de alto nível, como Cientista de Dados, Engenheiro
+                de Dados
+                e Desenvolvedor Backend, tornando-o um investimento estratégico para quem busca crescimento sólido na
+                área de
+                tecnologia.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">O que é POO (Programação orientada a objetos)?</h2>
+            <p class="section-subtitle">Conceito</p>
+            <p class="section-body">
+                <!-- https://www.alura.com.br/artigos/poo-programacao-orientada-a-objetos?srsltid=AfmBOor4FF-mAzfYHA_vEaolkysa49PQIQ_CTbbliTm_a04OhTsKKAQq -->
+                A Programação Orientada a Objetos é um paradigma que organiza o código ao redor de objetos — unidades
+                que
+                combinam dados (atributos) e ações (métodos). Seu intuito é aproximar o manuseio das estruturas de um
+                programa
+                ao manuseio das coisas do mundo real. alura
+                Tudo se baseia em dois conceitos centrais:
+                Classe — funciona como um molde abstrato que define características e comportamentos. Quando esse molde
+                é usado
+                para criar algo concreto, chamamos de instância.
+                Objeto — é a instância concreta de uma classe, com seus próprios atributos e métodos. Por exemplo, um
+                carro
+                Honda Fit é um objeto da classe "Carro", com atributos como cor e modelo, e métodos como acelerar e
+                frear.
+                A partir desses dois pilares, surgem os quatro conceitos fundamentais da POO:
+
+                Encapsulamento — restringe o acesso a atributos e métodos, protegendo o estado interno do objeto.
+                Herança — permite que uma classe filha herde características de uma classe mãe, evitando reescrita de
+                código.
+                Interface — define um "contrato" de métodos que diferentes classes devem implementar.
+                Polimorfismo — permite que um mesmo método se comporte de formas diferentes em classes distintas.
+            </p>
+            <p class="section-subtitle">Qual a vantagem de utilizar a POO?</p>
+            <p class="section-body">
+                <!-- https://www.dio.me/articles/vantagens-da-programacao-orientada-a-objetos-poo -->
+                A POO oferece uma série de vantagens que contribuem para o desenvolvimento de software mais robusto,
+                flexível e
+                de fácil manutenção: dio
+                Encapsulamento e proteção de dados — ao agrupar dados e métodos em classes, é possível controlar o
+                acesso às
+                informações, evitando alterações indevidas e mantendo a integridade dos objetos. Além disso, a
+                implementação
+                interna pode ser modificada sem impactar o restante do código.
+                Reutilização de código — por meio da herança, novas classes aproveitam o que já foi desenvolvido, sem
+                necessidade de reescrever lógica semelhante. O polimorfismo complementa isso ao permitir que objetos de
+                classes
+                diferentes sejam tratados de forma uniforme.
+                Manutenção simplificada — a divisão em módulos (classes) torna mais fácil identificar e corrigir erros
+                sem
+                afetar outras partes do sistema.
+                Colaboração eficiente — equipes podem trabalhar em classes diferentes simultaneamente, aumentando a
+                produtividade e facilitando a integração das partes do sistema.
+                Modelagem realista — a POO permite representar entidades do mundo real no código de forma intuitiva,
+                tornando o
+                desenvolvimento mais compreensível tanto para desenvolvedores quanto para outras partes envolvidas no
+                projeto.
+            </p>
+        </div>
+
+    </div>
 </body>
+
 </html>
